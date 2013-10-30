@@ -1,0 +1,24 @@
+﻿@model XSRFTest.Models.AdminIndexModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@if (@ViewBag.Message != null) { 
+<h3>@ViewBag.Message</h3>
+}
+
+<h2>Admins</h2>
+
+<ul>
+    @foreach (string admin in Model.Admins) { 
+    <li>@admin</li>
+    }
+</ul>
+
+<form id="add-admin">
+    <h3>Add an admin</h3>
+    <label>Username: </label>
+    <input type="text" name="username" />
+    <button type="submit">Submit</button>
+</form>

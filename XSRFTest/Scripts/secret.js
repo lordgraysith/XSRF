@@ -1,14 +1,16 @@
 ﻿$(function () {
-    $('#secret').click(function () {
-        $.ajax('/XSRFTest/home/protected', 
+    $('#add-admin').submit(function (e) {
+        $.ajax('/XSRFTest/admin/create', 
         {
             type: "POST"
+            , data: { username: $('#add-admin input[name="username"]').val() }
             , beforeSend: function (xhr) {
-                xhr.setRequestHeader('X-XSRF-TOKEN', $.cookie('XSRF-TOKEN'));
+                xhr.setRequestHeader('X-XSRF-TOKEN', document.cookie.match(/XSRF-TOKEN=(.*?)(?:$|;)/)[1]);
             }
             , success: function (data) {
-                alert(JSON.stringify(data));
+                document.location.reload();
             }
         });
+        e.preventDefault();
     });
 });

@@ -26,6 +26,8 @@ namespace XSRFTest
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterAuth();
             DependencyResolver.SetResolver(new LocalDependencyResolver());
+
+           
         }
 
         public class LocalDependencyResolver : IDependencyResolver
