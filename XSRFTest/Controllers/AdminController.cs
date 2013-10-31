@@ -26,12 +26,12 @@ namespace XSRFTest.Controllers
         //
         // POST: /Admin/Create
 
-        [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        [HttpGet]
+        public ActionResult Create(string username)
         {
             try
             {
-                AdminService.Current.AddAdmin(collection["username"]);
+                AdminService.Current.AddAdmin(username);
                 ViewBag.Message = "Success!";
                 return RedirectToAction("Index");
             }

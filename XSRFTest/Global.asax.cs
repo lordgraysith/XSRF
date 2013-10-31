@@ -1,5 +1,4 @@
-﻿using Lds.CES.XSRF;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -36,10 +35,6 @@ namespace XSRFTest
 
             public object GetService(Type serviceType)
             {
-                if (serviceType == typeof(IXSRFTokenGenerator))
-                {
-                    _types[serviceType] = new XSRFTokenGenerator();
-                }
                 if (_types.ContainsKey(serviceType))
                 {
                     return _types[serviceType];
@@ -49,10 +44,6 @@ namespace XSRFTest
 
             public IEnumerable<object> GetServices(Type serviceType)
             {
-                if (serviceType == typeof(IXSRFTokenGenerator))
-                {
-                    _types[serviceType] = new XSRFTokenGenerator();
-                }
                 if (_types.ContainsKey(serviceType))
                 {
                     return new List<object> { _types[serviceType] };

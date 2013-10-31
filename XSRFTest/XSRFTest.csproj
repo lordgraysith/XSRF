@@ -39,9 +39,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Lds.CES.XSRF">
-      <HintPath>..\..\CES-Stack\Trunk\Lds.CES.XSRF\Lds.CES.XSRF\bin\Debug\Lds.CES.XSRF.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -165,7 +162,6 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Code\AdminService.cs" />
-    <Compile Include="Code\XSRFTokenGenerator.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Filters\Admin.cs" />
     <Compile Include="Controllers\AdminController.cs" />
