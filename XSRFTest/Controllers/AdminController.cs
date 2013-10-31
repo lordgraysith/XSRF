@@ -26,7 +26,7 @@ namespace XSRFTest.Controllers
         //
         // POST: /Admin/Create
 
-        [HttpGet]
+        [HttpPost]
         public ActionResult Create(string username)
         {
             try

@@ -44,6 +44,5 @@ C:\dev\XSRFTest\XSRFTest\bin\DotNetOpenAuth.OAuth.Consumer.xml
 C:\dev\XSRFTest\XSRFTest\bin\DotNetOpenAuth.OAuth.xml
 C:\dev\XSRFTest\XSRFTest\bin\DotNetOpenAuth.OpenId.xml
 C:\dev\XSRFTest\XSRFTest\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
-C:\dev\XSRFTest\XSRFTest\obj\Debug\XSRFTest.csprojResolveAssemblyReference.cache
 C:\dev\XSRFTest\XSRFTest\obj\Debug\XSRFTest.dll
 C:\dev\XSRFTest\XSRFTest\obj\Debug\XSRFTest.pdb
