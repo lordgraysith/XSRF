@@ -19,4 +19,17 @@ namespace XSRFTest.Filters
             }
         }
     }
+    [System.AttributeUsage(AttributeTargets.All)]
+    public class Admin2Attribute : System.Attribute
+    {
+        public Admin2Attribute()
+        {
+            string username = HttpContext.Current.Request.Headers["policy-cn"];
+            AdminService adminService = AdminService.Current;
+            if (!adminService.IsAdmin(username))
+            {
+                throw new HttpException(404, "not authorized");
+            }
+        }
+    }
 }

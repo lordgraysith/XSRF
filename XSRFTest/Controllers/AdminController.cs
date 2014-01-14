@@ -9,12 +9,11 @@ using XSRFTest.Models;
 
 namespace XSRFTest.Controllers
 {
-    [Admin]
     public class AdminController : Controller
     {
         //
         // GET: /Admin/
-
+        [Admin2]
         public ActionResult Index()
         {
             AdminIndexModel model = new AdminIndexModel
@@ -26,6 +25,7 @@ namespace XSRFTest.Controllers
         //
         // POST: /Admin/Create
 
+        [Admin2]
         [HttpPost]
         public ActionResult Create(FormCollection collection)
         {
