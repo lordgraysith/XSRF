@@ -1,0 +1,10 @@
+1. unprotected
+2. nogets
+3. master
+
+XSRF is not found by security scanners
+QA needs to start testing for it
+Not a silver bullet
+	- Vulnerable to man in the middle
+	- Vulnerable to xss
+
